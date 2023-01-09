@@ -28,7 +28,8 @@ function Checkbox() {
   }
   return (
     <>
-      <input type="checkbox" name="all" onChange={changeInput} checked={data.filter(item => item.isChk !== true).length < 1} />
+      <input type="checkbox" name="all" onChange={changeInput} checked={data.filter(item => item.isChk !== true).length < 1} /> 
+ {/* 아래 체크들이 다 해제가 되면 전체동의 체크도 해제가 되는식 */}
       <label>전체 동의</label>
       <hr />
 {
